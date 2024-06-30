@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://bolajiakanji21:Unde5085@2@bolaji.l6yuhxc.mongodb.net/?retryWrites=true&w=majority&appName=Bolaji/playground')
+mongoose.connect('mongodb+srv://bolajiakanji21:Unde5085%402@bolaji.l6yuhxc.mongodb.net/playground?retryWrites=true&w=majority&appName=Bolaji')
 .then(() => console.log('connected to mongodb'))
-.catch(err => console.error('could not connect to mongodb'))
+.catch(err => console.error('could not connect to mongodb' + err))
 const courseSchema = new mongoose.Schema({
     name: String,
     author: String
